@@ -1,0 +1,17 @@
+---
+- hosts: test
+  sudo: yes
+  gather_facts: no
+  tasks:
+    - name: install wireshark
+      apt: name=wireshark state=latest
+    - name: install iperf
+      apt: name=iperf state=latest
+    - name: install pyhthon-pip
+      apt: name=python-pip state=latest
+    - name: install mininet using git
+      git: repo=https://github.com/mininet/mininet dest=/home/vagrant/git clone=yes
+    - name: install ryu using pip
+      pip: name=ryu
+    - name: install mininam
+      git: repo=https://github.com/uccmisl/MiniNAM clone=yes dest=/home/vagrant/git
