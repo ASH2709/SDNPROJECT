@@ -1,3 +1,5 @@
+#! usr/bin/env bash
+
 """Custom topology example
 
 RING Topology(Loop),
