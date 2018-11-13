@@ -25,8 +25,8 @@
 		[test]
 		test2
     6  ssh-keygen
-    8  ssh-copy-id vagrant@test1
-       ssh-copy-id vagrant@test2 
+    7 ssh-copy-id vagrant@test1
+    8   ssh-copy-id vagrant@test2 
     9  ssh test1
    10  ssh test2					
-12  ansible-playbook -s test1.yml
+12  ansible-playbook -s test.yml
